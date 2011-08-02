@@ -36,6 +36,9 @@
     <ClInclude Include="..\..\..\..\..\Мои документы\Visual Studio 2010\Projects\autometer_с\autometer_с\voltmetr.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="major.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">

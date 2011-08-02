@@ -83,6 +83,7 @@
     <ClInclude Include="..\..\..\..\..\Мои документы\Visual Studio 2010\Projects\autometer_с\autometer_с\Calibrator.h" />
     <ClInclude Include="..\..\..\..\..\Мои документы\Visual Studio 2010\Projects\autometer_с\autometer_с\SafeCalibrator.h" />
     <ClInclude Include="..\..\..\..\..\Мои документы\Visual Studio 2010\Projects\autometer_с\autometer_с\voltmetr.h" />
+    <ClInclude Include="major.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

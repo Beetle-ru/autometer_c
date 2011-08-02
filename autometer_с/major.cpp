@@ -1,11 +1,19 @@
 #include "stdafx.h"
 #include "Calibrator.h"
+#include "SafeCalibrator.h"
 #include "voltmetr.h"
-enum tvoltmetr {EMPTY,REFERNCE,VERIFIED};
+#include "major.h"
+
+//enum tvoltmetr {EMPTY,REFERNCE,VERIFIED};
 
 Calibrator* getCalibrator()
 {
 	static Calibrator *pcal = new Calibrator();
+	return pcal;
+}
+SafeCalibrator* getSafeCalibrator()
+{
+	static SafeCalibrator *pcal = new SafeCalibrator();
 	return pcal;
 }
 Voltmetr* getVoltmetr(tvoltmetr tv)

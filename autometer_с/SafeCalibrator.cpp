@@ -2,7 +2,7 @@
 #include "SafeCalibrator.h"
 #include <stdio.h>
 #include <math.h>
-
+#include <windows.h>
 
 SafeCalibrator::SafeCalibrator(void)
 {
@@ -22,12 +22,11 @@ int SafeCalibrator::runUpExact(double Voltage, double Frequency)
 	if(Voltage*Uout<0) // сбрасываем на 0 если изменился знак напряжения
 		Uout = 0;
 	setFrequency(Frequency);
-	 
 	setVoltage(Uout);
 	setTrigger(1);
 	while(fabs((Voltage-Uout)*k)>0.0000001) // крутим пока не достигнут минимальный порог
 	{
-		//sleepm(50) // задержка 50 милисекунд
+		Sleep(100); // задержка 100 милисекунд
 		setVoltage(Uout); // устанавливает напряжение на выходе калибратора
 		if(fabs((Voltage-Uout)*k)<100)
 			Uout+=((Voltage-Uout)*k);
