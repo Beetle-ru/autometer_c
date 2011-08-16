@@ -1,4 +1,4 @@
-// autometer_с.cpp: главный файл проекта.
+ // autometer_с.cpp: главный файл проекта.
 
 #include "stdafx.h"
 #include "Calibrator.h"
