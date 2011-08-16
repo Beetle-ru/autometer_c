@@ -1,5 +1,6 @@
 #pragma once
 #include "calibrator.h"
+//
 class SafeCalibrator :
 	public Calibrator
 {
